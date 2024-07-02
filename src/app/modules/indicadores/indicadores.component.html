@@ -1,12 +1,12 @@
 <div class="col-12" *ngFor="let item of indicadores">
-        
+
     <!-- contenedor -->
     <div class="d-flex justify-content-between align-items-center mb-3 p-3 " >
 
         <!-- textos -->
         <div>
-            <div class="mb-2" (click)="checkListado($event, item)" ><b>{{item.nombre}}</b></div>
-            <div class="text-primary small">{{ item.moneda }}</div>
+            <div class="mb-2" (click)="checkListado($event, item)" ><b>{{item.Nombre}}</b></div>
+            <div class="text-primary small">{{ item.Moneda }}</div>
         </div>
 
         <!-- icon -->
@@ -16,4 +16,5 @@
         </div>
 
     </div>
+    <hr>
 </div>

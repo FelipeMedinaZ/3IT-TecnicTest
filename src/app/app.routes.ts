@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
 
 //components
-import { IndicadoresComponent } from '../modules/indicadores/indicadores.component';
-import { ListadoValoresComponent } from '../modules/listado-valores/listado-valores.component';
-import { DetalleComponent } from '../modules/detalle/detalle.component';
+import { IndicadoresComponent } from './modules/indicadores/indicadores.component';
+import { ListadoValoresComponent } from './modules/listado-valores/listado-valores.component';
+import { DetalleComponent } from './modules/detalle/detalle.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'indicadores', pathMatch: 'full' },

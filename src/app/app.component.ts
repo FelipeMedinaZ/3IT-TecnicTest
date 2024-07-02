@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from '../modules/shared/header/header.component';
+import { HeaderComponent } from './modules/shared/header/header.component';
 
 @Component({
   selector: 'app-root',
@@ -12,3 +12,5 @@ import { HeaderComponent } from '../modules/shared/header/header.component';
 export class AppComponent {
   title = 'TecnicTest-3IT';
 }
+
+

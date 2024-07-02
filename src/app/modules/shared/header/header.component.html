@@ -8,13 +8,12 @@
             <i class="fa-solid fa-bars fa-xl" *ngIf="currentRoute.includes('/indicadores') " style="color: #74C0FC;"></i>
 
             <!-- ICONO LISTADO -->
-             <div class="d-flex justify-content-around align-items-center" *ngIf="currentRoute.includes('/listado-valores') ">
-                <i class="fa-solid fa-chevron-left fa-xl"  style="color: #74C0FC;"></i>
+             <div class="d-flex justify-content-around align-items-center" *ngIf="currentRoute.includes('/listado-valores')"
+             (click)="back($event)">
+                <i class="fa-solid fa-chevron-left fa-xl" style="color: #74C0FC;"></i>
                 <span class="small text-primary mx-2"> Indicadores </span>
-
              </div>
 
-            
             <!-- ICONO DETALLE -->
             <i class="fa-solid fa-chevron-left fa-xl" *ngIf="currentRoute.includes('/detalle')" style="color: #74C0FC;"></i>
         </span>
@@ -22,7 +21,7 @@
         <!-- TEXTO -->
         <h5 class="text-center flex-grow-1 mt-2 mb-1" >
             <span *ngIf="currentRoute.includes('/indicadores')">Indicadores</span>
-            <span *ngIf="currentRoute.includes('/listado-valores')">test</span>
+            <span *ngIf="currentRoute.includes('/listado-valores')">{{currencyName}}</span>
         </h5>
     </div>
 </div>
