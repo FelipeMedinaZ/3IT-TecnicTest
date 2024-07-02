@@ -25,8 +25,8 @@ export class HeaderComponent{
       filter((event): event is NavigationEnd => event instanceof NavigationEnd)
     ).subscribe((event: NavigationEnd) => {
       this.currentRoute = event.urlAfterRedirects; // se utiliza after redirects para abarcar el caso en el cual el usuario escriba una url cualquiera
-      //TODO: se podria mejorar, pero por comodidad se evaluará de esta manera
-      if (this.currentRoute.includes('indicadores')) { this.text = "Indicadores" }
+      console.log("currentRoute: ", this.currentRoute);
+      
     });
   }
 }

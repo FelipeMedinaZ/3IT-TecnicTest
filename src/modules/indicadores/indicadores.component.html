@@ -1,19 +1,19 @@
 <div class="col-12" *ngFor="let item of indicadores">
         
     <!-- contenedor -->
-    <div class="d-flex justify-content-between align-items-center mb-3 p-3 border" style="border: 1px solid #ccc;">
+    <div class="d-flex justify-content-between align-items-center mb-3 p-3 " >
 
-    <!-- textos -->
-    <div>
-        <div class="mb-2" (click)="checkListado($event, item)" ><b>{{item.nombre}}</b></div>
-        <div class="text-primary small">{{ item.moneda }}</div>
-    </div>
+        <!-- textos -->
+        <div>
+            <div class="mb-2" (click)="checkListado($event, item)" ><b>{{item.nombre}}</b></div>
+            <div class="text-primary small">{{ item.moneda }}</div>
+        </div>
 
-    <!-- icon -->
-    <div>
-        <i class="fa-solid fa-circle-info fa-xl mx-3" style="color: #74C0FC;"></i>
-        <i class="fa-solid fa-chevron-right" style="color: #bfbfbf;"></i>
-    </div>
+        <!-- icon -->
+        <div>
+            <i class="fa-solid fa-circle-info fa-xl mx-3" style="color: #74C0FC;"></i>
+            <i class="fa-solid fa-chevron-right" style="color: #bfbfbf;"></i>
+        </div>
 
     </div>
 </div>
