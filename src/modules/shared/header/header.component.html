@@ -1,0 +1,26 @@
+<div class="container rounded border-black">
+
+    <!-- header -->
+    <div class="d-flex align-items-center justify-content-center">
+
+        <!-- ICONO -->
+        <span class="align-items-center">
+            <!-- ICONO INDICADORES -->
+            <i class="fa-solid fa-bars fa-xl" *ngIf="currentRoute === '/indicadores' " style="color: #74C0FC;"></i>
+
+            <!-- ICONO LISTADO -->
+             <div class="d-flex justify-content-around align-items-center" *ngIf="currentRoute === '/listado-valores' ">
+                <i class="fa-solid fa-chevron-left fa-xl"  style="color: #74C0FC;"></i>
+                <span class="small text-primary m-3"> Indicadores </span>
+
+             </div>
+
+            
+            <!-- ICONO DETALLE -->
+            <i class="fa-solid fa-chevron-left fa-xl" *ngIf="currentRoute === '/detalle' " style="color: #74C0FC;"></i>
+        </span>
+
+        <!-- TEXTO -->
+        <h2 class="text-center flex-grow-1">{{text}}</h2>
+    </div>
+</div>
