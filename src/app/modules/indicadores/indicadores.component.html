@@ -6,13 +6,13 @@
         <!-- textos -->
         <div>
             <div class="mb-2" (click)="checkListado($event, item)" ><b>{{item.Nombre}}</b></div>
-            <div class="text-primary small">{{ item.Moneda }}</div>
+            <div class="color-blue small">{{ item.Moneda }}</div>
         </div>
 
         <!-- icon -->
-        <div>
-            <i class="fa-solid fa-circle-info fa-xl mx-3" style="color: #74C0FC;"></i>
-            <i class="fa-solid fa-chevron-right" style="color: #bfbfbf;"></i>
+        <div (click)="checkDetalle($event, item)">
+            <i class="fa-solid fa-circle-info fa-xl mx-3" style="color: #2577b6;"></i>
+            <i class="fa-solid fa-chevron-right fa-xl" style="color: #034bc9;"></i>
         </div>
 
     </div>

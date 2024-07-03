@@ -34,4 +34,8 @@ export class IndicadoresComponent{
     this.router.navigate(['/listado-valores'], {queryParams: item});
   }
 
+  checkDetalle(e: Event, item: IndicadoresData) {
+    e.preventDefault();
+    this.router.navigate(['/detalle'], {queryParams: item});
+  }
 }

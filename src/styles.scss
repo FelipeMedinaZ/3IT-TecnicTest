@@ -3,20 +3,22 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-
-
 .border-red {
     border: 5px solid red;
-
 }
 
 .border-black {
     border: 3px solid black;
-
 }
-
-
 
 .table-header {
     display: flex;
+}
+
+.text-font-xl {
+    font-size: xxx-large;
+}
+
+.color-blue {
+    color: #034bc9;
 }

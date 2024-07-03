@@ -1,6 +1,46 @@
-<p>detalle works!</p>
+
+<div class="container">
+  <!-- Valor -->
+  <div class="d-flex justify-content-center">
+    <div *ngIf="item">
+      <div class="color-blue text-font-xl">${{item.Valor}}</div>
+    </div>
+  </div>
+
+  <div class="card border-black">
+    <!-- NOMBRE -->
+    <div class="d-flex justify-content-between align-items-center m-2">
+      <h5><b>Nombre</b></h5>
+      <h5>{{currentItem.Nombre}}</h5>
+    </div>
+    <hr>
+    <!-- FECHA -->
+    <div class="d-flex justify-content-between align-items-center m-2">
+      <h5><b>Fecha</b></h5>
+      <h5>{{currentDate | date:"yyyy-MM-dd" }}</h5>
+    </div>
+    <hr>
+    <!-- UNIDAD DE MEDIDA -->
+    <div class="d-flex justify-content-between align-items-center m-2">
+      <h5><b>Unidad de medida</b></h5>
+      <h5>{{currentItem.Moneda }}</h5>
+    </div>
+  </div>
 
 
+  <br>
+  <div class="card border-black">
+      <!-- AQUI VA EL GRAFICO -->
+      <div class="container card-header text-center" *ngIf="chartData">
+        <h4>{{currentItem.Nombre}}</h4>
+        <p-chart *ngIf="chartData.datasets[0].data.length > 0" type="line" [data]="chartData"></p-chart>
+        <br>
+        <h4 *ngIf="chartData.datasets[0].data.length == 0">No hay datos disponibles</h4>
+      </div>
+  </div>
+
+
+</div>
 
 
 <ngx-spinner type="timer" size="medium" color="#fff">
