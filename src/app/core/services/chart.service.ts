@@ -28,7 +28,7 @@ export class ChartDataService {
     // Llenar datos del dataset
     rawData.forEach((measurement: any) => {
       const fecha = new Date(measurement.Fecha).toLocaleDateString();
-      const valor = parseFloat(measurement.Valor.replace(',', '.')); // Convertir el valor de texto a número
+      const valor = parseFloat(measurement.Valor.replace(',', '.'));
 
       transformedData.labels.push(fecha);
       dataset.data.push(valor);
@@ -41,20 +41,19 @@ export class ChartDataService {
   }
 
   private getColorByItem(item: string): string {
-    // Implementar lógica para definir colores según el tipo de dispositivo
     switch (item) {
       case 'Dolares':
-        return '#63a88b'; // Color para Dolares
+        return '#63a88b';
       case 'Euros':
-        return '#e0ae6e'; // Color para Euros
+        return '#e0ae6e';
       case 'IPCs':
-        return '#8a0f06'; // Color para IPCs
+        return '#8a0f06';
       case 'UFs':
-        return '#2a5679'; // Color para UFs
+        return '#2a5679';
       case 'UTMs':
-        return '#b35b1f'; // Color para UTMs
+        return '#b35b1f';
       default:
-        return '#000000'; // Color predeterminado
+        return '#000000';
     }
   }
 }

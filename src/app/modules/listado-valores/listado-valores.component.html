@@ -1,17 +1,13 @@
-<!-- <button (click)="back($event)">back</button> -->
-
 <div class="col-12" *ngFor="let item of listadoValores">
-
   <!-- contenedor -->
   <div class="d-flex justify-content-between align-items-center mb-3 p-3 " >
-
       <!-- fecha -->
       <div class="mx-4">
         <div class="color-blue"> {{item.Fecha}} </div>
       </div>
       <!-- valor -->
       <div class="mx-4">
-        <div class="text-black"><b>${{item.Valor}}</b> </div>
+        <div class="text-black"><b> ${{item.Valor}} </b></div>
       </div>
   </div>
   <hr>

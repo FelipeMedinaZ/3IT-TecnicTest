@@ -1,8 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { HttpService } from '../../core/services/http.service';
-import { IndicadoresData } from '../../../assets/interfaces/global.interface';
+import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { Router } from '@angular/router';
+
+//services
+import { HttpService } from '../../core/services/http.service';
+
+//interfaces
+import { IndicadoresData } from '../../../assets/interfaces/global.interface';
 
 @Component({
   selector: 'app-indicadores',
@@ -23,11 +27,7 @@ export class IndicadoresComponent{
     {Nombre: "UTM", Moneda: "Pesos", Query: "utm", ResponseName: "UTMs"},
   ];
 
-  constructor (
-    private httpService: HttpService,
-    private router: Router
-  ){}
-
+  constructor (private router: Router){}
 
   checkListado(e: Event, item: IndicadoresData) {
     e.preventDefault();

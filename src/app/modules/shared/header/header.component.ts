@@ -34,9 +34,6 @@ export class HeaderComponent{
 
   ngOnInit(): void {
     this.currentRoute = this.router.url;
-
-    // this.currencyName = this.cache.getCache('currencyName')
-
     this.router.events.pipe(
       filter((event): event is NavigationEnd => event instanceof NavigationEnd)
     ).subscribe((event: NavigationEnd) => {
