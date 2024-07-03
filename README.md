@@ -1,27 +1,37 @@
 # TecnicTest3IT
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
+Esta es una aplicación realizada como prueba técnica de 3IT. Sigue los pasos a continuación para configurar y ejecutar el proyecto.
 
-## Development server
+## Requisitos Previos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Asegúrate de tener instalado:
 
-## Code scaffolding
+- [Node.js](https://nodejs.org/en/) (versión 20.12.2 o superior)
+- [Angular CLI](https://angular.io/cli) (versión 17.x o superior)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalación
 
-## Build
+1. Navega al directorio del proyecto e Instala las dependencias:
+    npm install
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Ejecutar la Aplicación
 
-## Running unit tests
+Para ejecutar la aplicación localmente:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Inicia el servidor de desarrollo:
+    ```sh
+    ng serve
+    ```
 
-## Running end-to-end tests
+2. Abre tu navegador y navega a `http://localhost:4200/`.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Ver en Resolución de Galaxy S20 Ultra
 
-## Further help
+Para simular la aplicación en la resolución de un Galaxy S20 Ultra:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Abre el navegador Chrome.
+2. Presiona `F12` para abrir las Herramientas de Desarrollador.
+3. Haz clic en el botón `Toggle Device Toolbar` (o presiona `Ctrl + Shift + M`).
+4. Selecciona `Galaxy S20 Ultra` de la lista de dispositivos.
+
+Tu aplicación debería ahora mostrarse como aparecería en un Galaxy S20 Ultra.
